@@ -93,9 +93,7 @@ public class HomeFragment extends Fragment {
         };
         adapter.notifyDataSetChanged();
         rankingList.setAdapter(adapter);
-//        arrayAdapter=new ArrayAdapter(container.getContext(), android.R.layout.simple_list_item_1,
-//                android.R.id.text1, name);
-//        mylistView.setAdapter(arrayAdapter);
+
         return myfragment;
     }
 

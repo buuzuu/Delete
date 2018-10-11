@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#c14d4d">
+    android:background="#bf97a3">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Please wait for the quiz to end."
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/answersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

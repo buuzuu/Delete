@@ -34,7 +34,9 @@ public class Common {
     public static int End_Minute;
     public static int End_Date;
     public static int End_Month;
-
+    public static List<String> after_text_questions = new ArrayList<>();
+    public static List<String> after_text_answers = new ArrayList<>();
+    public static String answerAllowed;
 
 }
 

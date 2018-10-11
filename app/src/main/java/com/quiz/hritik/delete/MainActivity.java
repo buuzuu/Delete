@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity-Dick Head";
     BroadcastReceiver mRegistrationBroadcastReciever;
 
-
+    DatabaseReference questions, answerAllowed;
     @Override
     protected void onPause() {
         LocalBroadcastManager.getInstance(this).unregisterReceiver(mRegistrationBroadcastReciever);
@@ -96,6 +96,21 @@ public class MainActivity extends AppCompatActivity {
 
 
         FirebaseDatabase firebaseDatabase=FirebaseDatabase.getInstance();
+        questions = firebaseDatabase.getReference("Questions");
+        answerAllowed = firebaseDatabase.getReference();
+        answerAllowed.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                Log.d(TAG, "onDataChanged: " + dataSnapshot.child("answerAllowed").getValue());
+                Common.answerAllowed = String.valueOf(dataSnapshot.child("answerAllowed").getValue());
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
 
 
         final DatabaseReference ranking=firebaseDatabase.getReference("Ranking");
@@ -151,6 +166,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // loading question and answer for later display
+        questions.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                for (DataSnapshot data : dataSnapshot.getChildren()) {
+
+                    Common.after_text_answers.add(String.valueOf(data.child("correctAnswer").getValue()));
+                    Common.after_text_questions.add(String.valueOf(data.child("question").getValue()));
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
 
 
     }
@@ -196,6 +230,13 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Common.after_text_questions.clear();
+        Common.after_text_answers.clear();
     }
 
 }
