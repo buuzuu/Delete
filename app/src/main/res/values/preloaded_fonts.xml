@@ -2,5 +2,9 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/aclonica</item>
+        <item>@font/akronim</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/audiowide</item>
+        <item>@font/bubblegum_sans</item>
     </array>
 </resources>

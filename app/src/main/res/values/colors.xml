@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#9D405B</color>
     <color name="colorPrimaryDark">#101614</color>
     <color name="colorAccent">#8b2592</color>
+    <color name="button_color">#FF8a80</color>
+    <color name="white">#FFFFFF</color>
+    <color name="signupColor">#9D405B</color>
 </resources>

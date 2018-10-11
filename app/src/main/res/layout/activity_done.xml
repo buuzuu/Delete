@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/back3"
     tools:context=".Done">
 
     <RelativeLayout
@@ -51,9 +51,9 @@
                 android:layout_width="match_parent"
                 android:id="@+id/btnTryAgain"
                 android:layout_margin="8dp"
-                android:background="#AD1457"
+                android:background="#9D405B"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:text="Try Again"
+                android:text="Check your Ranking"
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:theme="@style/MyButton"

@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">Delete</string>
+    <string name="app_name">Quiz</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="text_with_bullet">Text with a ♦ </string>
 </resources>
