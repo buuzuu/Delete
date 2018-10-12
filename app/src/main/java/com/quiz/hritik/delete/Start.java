@@ -84,6 +84,8 @@ public class Start extends AppCompatActivity {
                                         }
                                     });
                         } else {
+                            Common.loadingDots.setVisibility(View.INVISIBLE);
+
                             BottomSheetDialog bottomSheetDialog = new BottomSheetDialog();
                             bottomSheetDialog.show(getSupportFragmentManager(), "exampleBSheet");
                         }

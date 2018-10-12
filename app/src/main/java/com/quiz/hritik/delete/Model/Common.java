@@ -1,6 +1,7 @@
 package com.quiz.hritik.delete.Model;
 
 
+import android.support.constraint.ConstraintLayout;
 import android.widget.RelativeLayout;
 
 import com.eyalbira.loadingdots.LoadingDots;
@@ -25,7 +26,7 @@ public class Common {
     public static List<String> registederUsername = new ArrayList<>();
     public static LoadingDots loadingDots;
     public static LoadingDots loadingDots2;
-    public static RelativeLayout relativeLayout;
+    public static ConstraintLayout relativeLayout;
     public static int Start_Hour;
     public static int Start_Month;
     public static int Start_Date;
