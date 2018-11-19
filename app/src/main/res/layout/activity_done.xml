@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back3"
-    tools:context=".Done">
+    tools:context="com.quiz.hritik.techconnect.Done">
 
     <RelativeLayout
         android:layout_width="match_parent"

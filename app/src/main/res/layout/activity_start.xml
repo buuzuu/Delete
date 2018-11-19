@@ -7,7 +7,7 @@
     android:id="@+id/rView"
     android:background="@drawable/back3"
     android:layout_height="match_parent"
-    tools:context=".Start">
+    tools:context="com.quiz.hritik.techconnect.Start">
 
     <com.eyalbira.loadingdots.LoadingDots
         android:id="@+id/dots"

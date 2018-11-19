@@ -8,17 +8,61 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:835279304157:android:051f9f9a95f5ee9e",
+        "mobilesdk_app_id": "1:835279304157:android:0d3d552f42fddfe2",
         "android_client_info": {
-          "package_name": "com.quiz.hritik.delete"
+          "package_name": "com.example.hritik.quiz_adminpanel"
         }
       },
       "oauth_client": [
         {
-          "client_id": "835279304157-rns04k5hhngh2k5m6ikhe9kat4h32teg.apps.googleusercontent.com",
+          "client_id": "835279304157-v943j77netd55osgpkr8jqjkmgmoavju.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.quiz.hritik.delete",
+            "package_name": "com.example.hritik.quiz_adminpanel",
+            "certificate_hash": "8405f2533eced7e0cc5c0072cb2349bc287f5ae7"
+          }
+        },
+        {
+          "client_id": "835279304157-ktqtngg6qlnmvv32qa4sfv1tgiqcpt5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNt0dymm0unuCRAYYJliQELBDOdC1tqak"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835279304157-ktqtngg6qlnmvv32qa4sfv1tgiqcpt5m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835279304157:android:eb35450a7db46399",
+        "android_client_info": {
+          "package_name": "com.quiz.hritik.techconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835279304157-kgilm5b5t16677o9j6jm9cf79ullb7ho.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quiz.hritik.techconnect",
             "certificate_hash": "8405f2533eced7e0cc5c0072cb2349bc287f5ae7"
           }
         },

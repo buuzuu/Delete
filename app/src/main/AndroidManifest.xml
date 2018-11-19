@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.quiz.hritik.delete">
+    package="com.quiz.hritik.techconnect">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -19,10 +19,10 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:label="Student Score"
-            android:name=".MainActivity"
+            android:name="com.quiz.hritik.techconnect.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Main2Activity"
+            android:name="com.quiz.hritik.techconnect.Main2Activity"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden">
             <intent-filter>
@@ -32,16 +32,16 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".BrodCastReciiever.AlarmReciever" />
+        <receiver android:name="com.quiz.hritik.techconnect.BrodCastReciiever.AlarmReciever" />
 
-        <activity android:name=".Start" />
+        <activity android:name="com.quiz.hritik.techconnect.Start" />
         <activity
-            android:name=".PLaying"
+            android:name="com.quiz.hritik.techconnect.PLaying"
             android:theme="@style/AppTheme.Playing" />
-        <activity android:name=".Done" />
-        <activity android:name=".ScoreDetail"></activity>
+        <activity android:name="com.quiz.hritik.techconnect.Done" />
+        <activity android:name="com.quiz.hritik.techconnect.ScoreDetail"></activity>
 
-        <service android:name=".BrodCastReciiever.MyFirebaseIdService">
+        <service android:name="com.quiz.hritik.techconnect.BrodCastReciiever.MyFirebaseIdService">
 
             <intent-filter>
 
@@ -51,7 +51,7 @@
             </intent-filter>
         </service>
 
-        <service android:name=".BrodCastReciiever.MyFirebaseMessagingService">
+        <service android:name="com.quiz.hritik.techconnect.BrodCastReciiever.MyFirebaseMessagingService">
 
             <intent-filter>
 
